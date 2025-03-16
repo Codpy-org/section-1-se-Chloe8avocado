@@ -4,8 +4,6 @@ X1 = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 A1 = [i for i in range(100)]  
 B1 = False  
 C1 = "Unused variable"  
-D1 = [None] * 50  
-Z1 = {}
 ERROR_COUNT = 0
 
 def input_math():
@@ -61,14 +59,6 @@ def func2():
     except:
         pass 
 
-class UselessClass:
-    def __init__(self):
-        self.a = 1
-        self.b = "string"
-        self.c = [1, 2, 3]
-        self.d = {"key": "value"}
-        self.e = None
-        self.unused = 100
 
     def useless_method(self):
         try:
@@ -77,26 +67,7 @@ class UselessClass:
         except:
             pass 
 
-class AnotherUselessClass(UselessClass, int): 
-    def another_method(self):
-        for i in range(1000):
-            try:
-                print(i)
-                if i % 100 == 0:
-                    raise KeyError("Fake KeyError")
-            except:
-                pass 
 
-def func3():
-    for i in range(1000):
-        for j in range(100):
-            for k in range(50):
-                for l in range(20):
-                    try:
-                        print(i, j, k, l)
-                        raise AttributeError("Fake AttributeError")
-                    except:
-                        pass 
 
 def func4():
     x = 0
@@ -126,20 +97,6 @@ def func5():
     except:
         pass 
 
-def func6():
-    def func7():
-        def func8():
-            def func9():
-                try:
-                    def func10():
-                        print("Function chain")
-                        raise OSError("Fake OSError")
-                    func10()
-                except:
-                    pass 
-            func9()
-        func8()
-    func7()
 
 def func11():
     instances = [UselessClass(), AnotherUselessClass()]
