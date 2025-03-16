@@ -10,4 +10,4 @@ def test_15():
     assert fizzBuzz(15) == "fizzBuzz"
 
 def test_2():
-    i (as a string)
+    assert fizzBuzzle(2) ==  i (as a string)
